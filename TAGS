@@ -1,0 +1,102 @@
+
+db/migrate/20190211050811_create_posts.rb,89
+class CreatePosts < ActiveRecord::Migration[5.2]CreatePosts1,0
+  def changechange2,0
+
+config/application.rb,177
+module JccPortfolioApiJccPortfolioApi20,0
+  class Application < Rails::ApplicationApplication21,0
+  class Application < Rails::ApplicationJccPortfolioApi::Application21,0
+
+app/jobs/application_job.rb,58
+class ApplicationJob < ActiveJob::BaseApplicationJob1,0
+
+app/graphql/mutations/create_post.rb,190
+module MutationsMutations1,0
+  class CreatePost < GraphQL::Schema::RelayClassicMutationCreatePost2,0
+  class CreatePost < GraphQL::Schema::RelayClassicMutationMutations::CreatePost2,0
+
+app/graphql/jcc_portfolio_api_schema.rb,72
+class JccPortfolioApiSchema < GraphQL::SchemaJccPortfolioApiSchema1,0
+
+app/graphql/types/base_enum.rb,138
+module TypesTypes1,0
+  class BaseEnum < GraphQL::Schema::EnumBaseEnum2,0
+  class BaseEnum < GraphQL::Schema::EnumTypes::BaseEnum2,0
+
+app/graphql/types/query_type.rb,168
+module TypesTypes1,0
+  class QueryType < Types::BaseObjectQueryType2,0
+  class QueryType < Types::BaseObjectTypes::QueryType2,0
+    def test_fieldtest_field9,0
+
+app/graphql/types/base_interface.rb,112
+module TypesTypes1,0
+  module BaseInterfaceBaseInterface2,0
+  module BaseInterfaceTypes::BaseInterface2,0
+
+app/graphql/types/post_type.rb,130
+module TypesTypes1,0
+  class PostType < Types::BaseObjectPostType2,0
+  class PostType < Types::BaseObjectTypes::PostType2,0
+
+app/graphql/types/base_union.rb,144
+module TypesTypes1,0
+  class BaseUnion < GraphQL::Schema::UnionBaseUnion2,0
+  class BaseUnion < GraphQL::Schema::UnionTypes::BaseUnion2,0
+
+app/graphql/types/base_scalar.rb,150
+module TypesTypes1,0
+  class BaseScalar < GraphQL::Schema::ScalarBaseScalar2,0
+  class BaseScalar < GraphQL::Schema::ScalarTypes::BaseScalar2,0
+
+app/graphql/types/mutation_type.rb,180
+module TypesTypes1,0
+  class MutationType < Types::BaseObjectMutationType2,0
+  class MutationType < Types::BaseObjectTypes::MutationType2,0
+    def test_fieldtest_field7,0
+
+app/graphql/types/base_input_object.rb,180
+module TypesTypes1,0
+  class BaseInputObject < GraphQL::Schema::InputObjectBaseInputObject2,0
+  class BaseInputObject < GraphQL::Schema::InputObjectTypes::BaseInputObject2,0
+
+app/graphql/types/base_object.rb,150
+module TypesTypes1,0
+  class BaseObject < GraphQL::Schema::ObjectBaseObject2,0
+  class BaseObject < GraphQL::Schema::ObjectTypes::BaseObject2,0
+
+app/channels/application_cable/connection.rb,195
+module ApplicationCableApplicationCable1,0
+  class Connection < ActionCable::Connection::BaseConnection2,0
+  class Connection < ActionCable::Connection::BaseApplicationCable::Connection2,0
+
+app/channels/application_cable/channel.rb,177
+module ApplicationCableApplicationCable1,0
+  class Channel < ActionCable::Channel::BaseChannel2,0
+  class Channel < ActionCable::Channel::BaseApplicationCable::Channel2,0
+
+app/mailers/application_mailer.rb,67
+class ApplicationMailer < ActionMailer::BaseApplicationMailer1,0
+
+app/controllers/application_controller.rb,78
+class ApplicationController < ActionController::APIApplicationController1,0
+
+app/controllers/graphql_controller.rb,218
+class GraphqlController < ApplicationControllerGraphqlController1,0
+  def executeexecute2,0
+  def ensure_hash(ambiguous_param)ensure_hash20,0
+  def handle_error_in_development(e)handle_error_in_development37,0
+
+app/models/post.rb,40
+class Post < ApplicationRecordPost1,0
+
+app/models/application_record.rb,67
+class ApplicationRecord < ActiveRecord::BaseApplicationRecord1,0
+
+test/test_helper.rb,101
+class ActiveSupport::TestCaseTestCase5,0
+class ActiveSupport::TestCaseActiveSupport::TestCase5,0
+
+test/models/post_test.rb,54
+class PostTest < ActiveSupport::TestCasePostTest3,0
