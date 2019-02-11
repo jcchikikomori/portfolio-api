@@ -44,6 +44,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # GraphQL
+gem 'graphql'
 gem 'graphiql-rails'
 
 # Faker for generating fakes
