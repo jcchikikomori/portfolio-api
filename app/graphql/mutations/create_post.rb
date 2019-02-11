@@ -11,8 +11,8 @@ module Mutations
     argument :description, String, required: true
 
     # Mutation type will direct here..
-    def resolve(t:, d:nil)
-      post = Post.create!(title: t, description: d)
+    def resolve(title:, description:)
+      post = Post.create!(title: title, description: description)
       # { post: post }
       if post.save
         # Successful creation, return the created object with no errors
