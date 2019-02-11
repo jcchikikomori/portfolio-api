@@ -9,7 +9,7 @@
 done = false
 
 puts 'Creating welcome message...'
-message = 'Hi! This is me JCC from GraphQL Server! My master made me.. Nice to meet you, visitor!'
+message = 'Hi! This is JCC bot running with GraphQL! My master made me.. Nice to meet you, visitor!'
 p = Post.new(title: 'Welcome!', description: message)
 if p.save
   done = true
