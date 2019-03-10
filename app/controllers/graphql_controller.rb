@@ -1,4 +1,5 @@
 class GraphqlController < ApplicationController
+  before_filter :authenticate_user!
   def execute
     variables = ensure_hash(params[:variables])
     query = params[:query]

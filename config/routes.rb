@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  
-  # graphiql
-  # if Rails.env.development?
-  # disabled condition to test well in production
-  # TODO: Will be disabled on next release
-  mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
-  # end
-
+  authenticated :user do
+    mount GraphiQL::Rails::Engine, at: "/", graphql_path: "/graphql"
+  end
+  devise_scope :user do
+    root "devise/sessions#new"
+  end
   post "/graphql", to: "graphql#execute"
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -5,18 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-done = false
-
-puts 'Creating welcome message...'
-message = 'Hi! This is JCC bot running with GraphQL! My master made me.. Nice to meet you, visitor!'
-p = Post.new(title: 'Welcome!', description: message)
-if p.save
-  done = true
-end
-
-## Final
-
-if done
-  puts 'Seed done...'
+seeds = %w[user]
+seeds.each do |s|
+  # rubocop:disable Rails/Output
+  puts "#" * 80
+  puts "Table: #{s.pluralize.upcase}"
+  # rubocop:enable Rails/Output
+  require_relative "seeds/models/#{s}.rb"
 end
