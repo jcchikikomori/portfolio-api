@@ -14,8 +14,8 @@ posts = [
 # rubocop:enable Metrics/LineLength
 
 puts 'Creating welcome message, etc...'
-posts.each do |p|
-  p = Post.new(title: p.title, description: p.description)
+posts.each do |post|
+  p = Post.new(title: post[:title], description: post[:description])
   skip unless p.save!
 end
 

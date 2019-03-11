@@ -6,7 +6,6 @@ module Mutations
 
     # Arguments will be used from client
     argument :id, ID, required: true
-    argument :description, String, required: true
 
     # Mutation type will direct here..
     def resolve(id:)
