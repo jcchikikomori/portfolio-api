@@ -21,7 +21,8 @@ module Types
       argument :page, Integer, required: false
     end
     def all_post(page:nil)
-      Post.all
+      # Get all not deleted ;)
+      Post.where(:deleted => false)
     end
   end
 end
